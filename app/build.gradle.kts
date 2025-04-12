@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.pruebadeaudioble"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.pruebadeaudioble"
