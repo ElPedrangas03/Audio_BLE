@@ -13,6 +13,10 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        if (!hasBlePermissions(this)) {
+            requestBlePermissions(this)
+        }
+
         setContent {
             MaterialTheme {
                 val context = LocalContext.current
